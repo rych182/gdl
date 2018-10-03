@@ -272,7 +272,7 @@ h1.nombre-sitio {/*Esta es la parte parra moviles*/
 
 @media only screen and (min-width:768px) {
     h1.nombre-sitio{
-        font-size: 8.5vw;
+        font-size: 9.9vw;
         margin: 0;
         line-height: 1;
     }    
@@ -405,6 +405,7 @@ div.programa-evento {
     div.programa-evento {
         width: 70%;
     }
+}
 
 @media only screen and (min-width: 992px) {/*Tamaño de una laptop o escritorio*/
     div.programa-evento {
@@ -580,12 +581,37 @@ p.numero {
     margin: 0 0 10px 0;
 }
 
+/*-----------------Tabla de precios----------------------*/
+ul.lista-precios > li {
+    padding: 10px;
+}
 
+@media only screen and (min-width:768px) {
+    ul.lista-precios > li{
+        float: left;
+        width: 33.3%;
+    }
+}
 
+div.tabla-precio{/*borde*/
+    border: 1px solid #e1e1e1;
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
 
+div.tabla-precio ul li {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #868686;
+    line-height: 26px;
+}
 
-
-
+div.tabla-precio h3{
+    font-size: 16px;
+    text-transform: uppercase;
+}
 
 
 
