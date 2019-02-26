@@ -166,7 +166,15 @@ h3{
     text-transform: uppercase;
     font-size: 1em;
     display: inline-block;/*Para que haya una pequeña separación*/
+    border: 2px solid #fe4918;
 }
+
+.button.hollow,
+.button.hollow:hover{
+    background-color: white;
+    color: #fe4918;
+}
+
 .float-right{
     float: right;
 }
@@ -600,6 +608,13 @@ div.tabla-precio{/*borde*/
     text-align: center;
 }
 
+div.tabla-precio:hover{
+    transform: scale(1.1);
+    border: 1px solid #fe4918;
+    box-shadow: 0px 0px 50px #666;/*Sombra*/
+    transition: all .3s ease;
+}
+
 div.tabla-precio ul li {
     font-size: 14px;
     margin-bottom: 20px;
@@ -608,20 +623,73 @@ div.tabla-precio ul li {
     line-height: 26px;
 }
 
+.verde{ /* Las palomitas verdes*/
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    font-size: 20px;
+    color:green;
+}
+
 div.tabla-precio h3{
     font-size: 16px;
     text-transform: uppercase;
 }
 
+div.tabla-precio p.numero{
+    color: #000;
+    margin: 20px 0;
+}
 
+/*----------MAPA---------------*/
 
+div.mapa{
+    height: 420px;
+    background-color: green;
+}
 
+/*---- TESTIMONIALES -------*/
 
+div.testimoniales{
+    padding-bottom: 20px;
+}
 
+div.testimonial{
+    padding: 5px;
+}
 
+@media only screen and (min-width:768px){ /*Recuerda separar el "and de los parentesis"*/
+    div.testimonial{ /*Para alinearlo en 3 columnas*/
+        float: left;
+        width: 33.3%; 
+    }   
+}
 
+blockquote {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    position: relative;
+    margin: 0 0 10px 0;
+    padding-bottom: 20px;
+}
 
+blockquote p{
+    text-align: left!important;
+    font-size: 1em!important;
+    font-family: 'PT Sans', sans-serif;
+    padding: 0 20px 0 65px; /*Para que haga un poco de espacio*/
+}
 
+blockquote p::before{
+    content: '\201c';
+    position: absolute;
+    left: 13px;
+    top:-6px;
+    font-size: 8rem;
+    margin: 0;
+    padding: 0;
+    color: #fe4918;
+}
 
 
 
